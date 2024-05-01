@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="image/Logo.jpg" alt="LOGO" />
+        <nav>
+            <ul>
+                <li><a href="#"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="#"><b>DEROULEMENT</b></a></li>
+				<li><a href="#"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="#"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="#"><b>GROUPE</b></a></li>
+							<li><a href="#"><b>CLASSE</b></a></li>
+							<li><a href="#"><b>EC</b></a></li>
+							<li><a href="#"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="#"><b>ENSEIGNANT</b></a></li>
+                <li><a href="#"><b>SALLE</b></a><li>
+                <li><a href="#"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT CLASSE
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formClasse" method="post" action="#">
+						<div>
+							<label>NOMCLASSE <font color="red">*</font></label>
+							<input type="text" id="inputNomClsse" name="nomClasse" placeholder="Le nom de la classe ici...">
+						</div>
+						<div>
+							<label>FORMATION <font color="red">*</font></label>
+							<input type="text" id="inputFormation" name="formation" placeholder="Le nom de la formation ici...">
+						</div>
+						<div>
+							<label>NIVEAU <font color="red">*</font></label>
+							<input type="text" id="inputNiveau" name="niveau" placeholder="Le le niveau ici...">
+						</div>
+						<div>
+							<label>NBRETUDIANT <font color="red">*</font></label>
+							<input type="text" id="inputNbreEtudiant" name="nbreEtudiant" placeholder="Le nbreEtudiant ici...">
+						</div>
+                        <div>
+							<label>SALLE <font color="red">*</font></label>
+							<input type="text" id="inputSalle" name="salle" placeholder="Le le niveau ici...">
+						</div>
+						</div>
+						<div>
+							<label>DATEHEURE <font color="red">*</font></label>
+							<input type="text" id="inputDateHeure" name="dateHeure" placeholder="La date ici...">
+						</div>
+						<div>
+							<label>UniteEnseignement <font color="red">*</font></label>
+							<input type="text" id="inputUniteEnseignemnt" name="UniteEnseignement" placeholder="L'UniteEnseignement ici...">
+						</div>
+
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerClasse">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>NOMCLASSE</th>
+								<th>FORMATION</th>
+								<th>NIVEAU</th>
+								<th>NBRETUDIANT</th>
+								<th>SALLE</th>
+								<th>DATEHEURE</th>
+								<th>UniteENEIGMENT </th>
+                                
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>NOMCLASSE</th>
+								<th>FORMATION</th>
+								<th>NIVEAU</th>
+								<th>NBRETUDIANT</th>
+								<th>SALLE</th>
+								<th>DATEHEURE</th>
+								<th>UniteENEIGMENT </th>
+                                
+								<th>ACTIVER/DESACTIVER</th>
+							</tr>
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                               
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						<td> 7 </td>
+                                
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="LOGO" />
+        <nav>
+            <ul>
+                <li><a href="#"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="#"><b>DEROULEMENT</b></a></li>
+				<li><a href="#"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="#"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="#"><b>GROUPE</b></a></li>
+							<li><a href="#"><b>CLASSE</b></a></li>
+							<li><a href="#"><b>EC</b></a></li>
+							<li><a href="#"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="#"><b>ENSEIGNANT</b></a></li>
+                <li><a href="#"><b>SALLE</b></a><li>
+                <li><a href="#"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT maquette
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formMaquette" method="post" action="#">
+						<div>
+							<label>IDMaquette <font color="red">*</font></label>
+							<input type="text" id="inputIDMaquette" name="IDMaquette" placeholder="L'id de la maquette ici...">
+						</div>
+						<div>
+							<label>NOMMAQUETTE <font color="red">*</font></label>
+							<input type="text" id="inputNomMaquette" name="nomMaquuette" placeholder="Le nom de la maquette ici...">
+						</div>
+						<div>
+							<label>FORMATION <font color="red">*</font></label>
+							<input type="text" id="inputFormation" name="formation" placeholder="Le nom de la formation ici...">
+						</div>
+						
+						<div>
+							<label for="datetime">Date et Heure <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						<div>
+							<label for="uniteEnseignement">UNITE ENSEIGNEMENT <font color="red">*</font></label>
+							<select id="uniteEnseignement" name="uniteEnseignement[]" multiple required>
+								<option value="Mathématiques">Mathématiques</option>
+								<option value="Physique">Physique</option>
+								<option value="Chimie">Chimie</option>
+								<option value="Informatique">Informatique</option>
+							</select>
+						</div>
+						
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>IDMaquette</th>
+								<th>NOMMAQUETTE</th>
+								<th>FORMATION</th>
+								<th>DATEHEURE</th>
+								<th>uniteEnseignement</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>IDMaquette</th>
+								<th>NOMMAQUETTE</th>
+								<th>FORMATION</th>
+								<th>DATEHEURE</th>
+								<th>uniteEnseignement</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						
+        						
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>

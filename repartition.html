@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="LOGO" />
+        <nav>
+            <ul>
+                <li><a href="#"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="#"><b>DEROULEMENT</b></a></li>
+				<li><a href="#"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="#"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="#"><b>GROUPE</b></a></li>
+							<li><a href="#"><b>CLASSE</b></a></li>
+							<li><a href="#"><b>EC</b></a></li>
+							<li><a href="#"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="#"><b>ENSEIGNANT</b></a></li>
+                <li><a href="#"><b>SALLE</b></a><li>
+                <li><a href="#"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT REPARTITION
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formRepartition" method="post" action="#">
+						<div>
+							<label>IDREPARTITION <font color="red">*</font></label>
+							<input type="text" id="inputIDRepartition" name="idRepartion" placeholder="L'id de la repartition ici...">
+						</div>
+						<div>
+							<label>uniteEnseignement <font color="red">*</font></label>
+							<input type="text" id="inputUniteEnseignement" name="uniteEnseignement" placeholder="L'unite d'uniteEnseignement ici...">
+						</div>
+						<div>
+							<label>PROFCM <font color="red">*</font></label>
+							<input type="text" id="inputProfCM" name="profCM" placeholder="Le nom du professeur ici...">
+						</div>
+						<div>
+							<label>RESPONSABLETD <font color="red">*</font></label>
+							<input type="text" id="inputResponsableTD" name="responsableTD" placeholder="Le responsableTD ici...">
+						</div>
+						<div>
+							<label>RESPONSABLETP <font color="red">*</font></label>
+							<input type="text" id="inputResponsableTP" name="responsableTP" placeholder="Le responsableTP ici...">
+						</div>
+						<div>
+							<label for="datetime">Date et Heure <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>IDREPARTITION</th>
+								<th>uniteEnseignement</th>
+								<th>PROFCM</th>
+                                <th>RESPONSABLETD</th>
+								<th>RESPONSABLETP</th>
+								<th>DATEHEURE</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>IDREPARTITION</th>
+								<th>uniteEnseignement</th>
+								<th>PROFCM</th>
+                                <th>RESPONSABLETD</th>
+								<th>RESPONSABLETP</th>
+								<th>DATEHEURE</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								
+        						
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>

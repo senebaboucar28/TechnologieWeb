@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="LOGO" />
+        <nav>
+            <ul>
+                <li><a href="#"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="#"><b>DEROULEMENT</b></a></li>
+				<li><a href="#"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="#"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="#"><b>GROUPE</b></a></li>
+							<li><a href="#"><b>CLASSE</b></a></li>
+							<li><a href="#"><b>EC</b></a></li>
+							<li><a href="#"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="#"><b>ENSEIGNANT</b></a></li>
+                <li><a href="#"><b>SALLE</b></a><li>
+                <li><a href="#"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT EMPLOI DU TEMPS
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formEmploiDuTemps" method="post" action="#">
+						<div>
+							<label>IDEmploiDuTemps <font color="red">*</font></label>
+							<input type="text" id="inputIDEmploiDutemps" name="IDEmploiDuTemps" placeholder="L'id de l'emploi du IDEmploiDuTemps ici...">
+						</div>
+						<div>
+							<label for="datetime">date debut <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						<div>
+							<label for="datetime">Date fin <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						<div>
+							<label>CLASSE <font color="red">*</font></label>
+							<input type="text" id="inputNomClasse" name="classe" placeholder="Le nom de la classe ici...">
+						</div>
+						<div>
+							<label for="datetime">Date et Heure <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						<div>
+							<label>SÉANCE <font color="red">*</font></label>
+							<select name="seance" required>
+								<option value="Matin">Matin</option>
+								<option value="Après-midi">Après-midi</option>
+								<option value="Soir">Soir</option>
+							</select>
+						</div>
+						
+
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>IDEmploiDuTemps</th>
+								<th>DATEDEBUT</th>
+								<th>DATEFIN</th>
+                                <th>CLASSE</th>
+								<th>SEANCE</th>
+								<th>DATEHEURE</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>IDEmploiDuTemps</th>
+								<th>DATEDEBUT</th>
+								<th>DATEFIN</th>
+                                <th>CLASSE</th>
+								<th>SEANCE</th>
+								<th>DATEHEURE</th>
+								<th>ACTIVER/DESACTIVER</th>
+							</tr>
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+        						
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>

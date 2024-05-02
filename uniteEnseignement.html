@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <title>GEST-ENSEIGNEMENT-UASZ</title>
+</head>
+
+<body>
+    <header>
+        <img src="#" alt="LOGO" />
+        <nav>
+            <ul>
+                <li><a href="#"><b>TABLEAU DE BORD</b></a></li>
+                <li><a href="#"><b>DEROULEMENT</b></a></li>
+				<li><a href="#"><b>EMPLOI DU TEMPS</b></a></li>
+                <li><a href="#"><b>REPARTITION</b></a></li>
+                <li><a href="#"><b>MAQUETTE</b></a>
+                    <div>
+						<ul>
+							<li><a href="#"><b>GROUPE</b></a></li>
+							<li><a href="#"><b>CLASSE</b></a></li>
+							<li><a href="#"><b>EC</b></a></li>
+							<li><a href="#"><b>UE</b></a></li>
+						</ul>
+                    </div>
+                </li>
+				<li><a href="#"><b>ENSEIGNANT</b></a></li>
+                <li><a href="#"><b>SALLE</b></a><li>
+                <li><a href="#"><b>DECONNEXION</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </header>
+    <main>
+        <article>
+            <section>
+               	<div>
+            		<button id="bouton1">
+                    AJOUT uniteEnseignement
+               		</button>
+            	</div> <br/>
+            </section>
+            <section>
+            	<div>
+                    <form name="formUniteEnseignement" method="post" action="#">
+						<div>
+							<label>IDUnteEnseignement <font color="red">*</font></label>
+							<input type="text" id="inputIDUniteEnseignement" name="IDUnteEnseignement" placeholder="L'id de la uniteEnseignement ici...">
+						</div>
+						<div>
+							<label>NOMUniteEnseignement <font color="red">*</font></label>
+							<input type="text" id="inputNomUniteEnseigneigment" name="NOMUniteEnseignement" placeholder="Le nom de la uniteEnseignement ici...">
+						</div>
+						<div>
+							<label for="CREDIT">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="credit" name="credit" placeholder="credit" min="1" required>
+						</div>
+						<div>
+							<label for="DUREECOURS">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="dureecours" name="dureecours" placeholder="Durée en heures" min="1" required>
+						</div>
+						
+						<div>
+							<label for="DUREECM">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="dureeCM" name="dureeCM" placeholder="Durée CM" min="1" required>
+						</div>
+						<div>
+							<label for="DUREETD">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="dureeTD" name="dureeTD" placeholder="Durée TD" min="1" required>
+						</div>
+						<div>
+							<label for="dureecours">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="dureecours" name="dureecours" placeholder="Durée en heures" min="1" required>
+						</div>
+						<div>
+							<label for="DUREETP">DURÉE DU COURS <font color="red">*</font></label>
+							<input type="number" id="dureeTP" name="dureeTP" placeholder="Durée TP" min="1" required>
+						</div>
+						<div>
+							<label>SEMESTRE <font color="red">*</font></label>
+							<input type="text" id="inputSemestre" name="semestre" placeholder="Le nom du semestre ici...">
+						</div>
+						<div>
+							<label for="datetime">Date et Heure <font color="red">*</font></label>
+							<input type="datetime-local" id="datetime" name="datetime" required>
+						</div>
+						<div>
+							<label>MAQUETTE <font color="red">*</font></label>
+							<input type="text" id="inputMaquette" name="maquette" placeholder="Le nom du maquette ici...">
+						</div>
+						
+						<div>
+							<font color="red">Les champs qui ont (*) sont obligatoires</font>
+							</br><button type="button" >Fermer</button>
+							<button type="submit" name="btnEnregistrerEnseignant">Enregistrer</button>
+						</div>
+					</form>
+                </div>
+            </section>
+            <section>
+                <div>
+                   <table id="tab-exemple" border="1">
+						<thead>
+							<tr>
+								<th>IDUnteEnseignement</th>
+								<th>NOMUniteEnseignement</th>
+								<th>CREDIT</th>
+                                <th>DUREECOURS</th>
+								<th>DUREECM</th>
+								<th>DUREETD</th>
+								<th>DUREETP</th>
+								<th>SEMESTRE</th>
+								<th>DATEHEURE</th>
+								<th>uniteEnseignement</th>
+								<th>ACTIVER/DESACTIVER</th>
+
+							</tr>
+						</thead>
+                        <tfoot>
+							<tr>
+								<th>IDUnteEnseignement</th>
+								<th>NOMUniteEnseignement</th>
+								<th>CREDIT</th>
+                                <th>DUREECOURS</th>
+								<th>DUREECM</th>
+								<th>DUREETD</th>
+								<th>DUREETP</th>
+								<th>SEMESTRE</th>
+								<th>DATEHEURE</th>
+								<th>uniteEnseignement</th>
+								<th>ACTIVER/DESACTIVER</th>
+							</tr>
+						</tfoot>
+						<tbody>
+        					<tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        						
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        					</tr>
+                            <tr>
+        						<td> 1 </td>
+        						<td> 2 </td>
+        						<td> 3 </td>
+        						<td> 4 </td>
+        						<td> 5 </td>
+        						<td> 6 </td>
+								<td> 7 </td>
+								<td> 8 </td>
+								<td> 9 </td>
+								<td> 10 </td>
+        					</tr>
+                        </tbody>
+					</table>
+               </div>
+            </section>
+            <aside></aside>
+            <aside></aside>
+        </article>
+        <aside></aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"><b>A PROPOS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+
+</html>
